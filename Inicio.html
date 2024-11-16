@@ -12,25 +12,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body class="color">
     <header>
-        <div class="logo">
+        <nav class="menu">
             <img src="imagenes/LOGO.png" alt="Logo" height="70px">
-        </div>
-        <div class="menu">
-            <ul><a href="Inicio.html">Inicio</a></ul>
-            <ul><a href="Mangas.html">Mangas</a></ul>
-            <ul><a href="Animes.html">Animes</a></ul>
-            <ul><a href="Juegos.html">VideoJuegos</a></ul>
-        </div>
+            <div class="menu">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Mangas.html">Mangas</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Animes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                    <a class="dropdown-item" href="Animes temp.html">Animes de temporada</a>
+                    <a class="dropdown-item" href="Animes.html">Animes ALL</a>
+                    </div>
+                </li>
+                <li><a href="Juegos.html">VideoJuegos</a></li>
+            </div>
+        </nav>
     </header>
     <main>
-        
+        <div class="centro_inicio">
+            <h2>DE QUE TRATA</h2>
+            <div class="informacion">
+                <p >MangaVault es una plataforma web que ofrece una gran variedad de mangas, animes y videojuegos. En esta sección, encontrarás la opción de descargar y leer mangas en formato PDF, así como ver tus videos favoritos en diferentes plataformas.</p>
+            </div>
+        </div>
+        <h3>NOSOTROS</h3>
+        <img scr=>
     </main>
     <footer>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
