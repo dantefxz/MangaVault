@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head id="TabJS">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Diseños/diseño.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Changa:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+<body class="color">
+    <header>
+        <a class="navbar-brand" href="Inicio.html">
+            <img src="imagenes/Logos/LOGO.png" alt="Logo" height="70px">
+        </a>
+        <nav class="navbar navbar-expand ms-auto">
+            <ul class="navbar-nav">
+                <li><a class="nav-link text-white" href="Inicio.html">Inicio</a></li>
+                <li><a class="nav-link text-white" href="Top.html?categoria=Manga">Mangas</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Animes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Top.html?categoria=Animes">Animes</a></li>
+                        <li><a class="dropdown-item" href="Top.html?categoria=AnimeTemporada">Animes de Temporada</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link text-white" href="Top.html?categoria=VideoJuegos">Videojuegos</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="TituloJS"></section>
+        <section id="ResenaJS"></section>
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div>
+                    <div>
+                        <img id="expandedImg" src="" alt="Imagen Ampliada" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-6">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li class="pt-1"><a href="Inicio.html">Inicio</a></li>
+                        <li class="pt-1"><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="text-center col-6">
+                    <h4>Contáctanos</h4>
+                    <div>
+                        <p>Redes: </p>
+                        <a href="https://instagram.com"><img src="imagenes/Redes/instagram.png" alt="instagram" width="40px"></a>
+                        <a href="https://x.com"><img src="imagenes/Redes/X-Logo.png" alt="X" width="40px"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <p>&copy; 2024 MangaVault. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+        import { GenerarResena } from "./JavaScript/Main.js"; 
+        GenerarResena();
+
+        $(document).ready(function() {
+            $('.ampliar').click(function() {
+                var imgSrc = $(this).attr('src'); 
+                $('#expandedImg').attr('src', imgSrc); 
+                $('#imageModal').modal('show');
+            });
+        });
+    </script>
+</body>
+</html>

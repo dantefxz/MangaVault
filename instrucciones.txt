@@ -1,0 +1,1 @@
+Ejecutar la página bajo un localhost Por ej: Extensión de Live Server

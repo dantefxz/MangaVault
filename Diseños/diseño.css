@@ -1,25 +1,29 @@
-a:hover{
-    color: black;
-    text-decoration: none;
+a:active, a:link, a:visited{
+    color: black !important;
+    text-decoration: none !important;
 }
-a:active{
-    color: black;
-    text-decoration: none;
+main a:hover{
+    color: black !important;
+    text-decoration: none !important;
+    border: 1px black solid;
+    border-radius: 4%;
+    padding: 5px;
 }
-a:link{
-    color: black;
-    text-decoration: none;
+li a:hover{
+    border: 1px black solid;
+    border-radius: 80%;
+    padding: 5px;
 }
-a:visited{
-    color: black;
-    text-decoration: none;
+li ul a:hover, li ul a:link{
+    border: none;
+    display: flex;
+    justify-content: center;
 }
 header{
     display: flex;
     align-items: center;
-    
 }
-p, li, a{
+p, ul, li, a{
     font-family: "Changa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -41,29 +45,60 @@ h1,h2,h3,h4{
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-}
+}  
 .dropdown-menu{
-    background-color: #ffffe2 !important;
+    background-color: #FFFFE2 !important;
+}
+.dropdown-item{
+    background-color: #FFFFE2 !important;
+}
+.navbar-nav{
+    display: flex;
+    align-content: flex-end;
+    padding-right: 20px;
+    gap: 20px;
+}
+.navbar-brand{
+    padding-left: 5px;
+    margin-top: 10px;
+}
+#TituloJS {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro de main */
+}
+#ListaJS {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los elementos */
+}
+.nav-link{
+    display: flex;
+    justify-content: flex-end;
 }
 .descripcion{
     width: 50%;
 }
 .caja{
-    display: flex;
+    display: inline-block;
     padding: 20px;
 }
 .titulo{
     display: flex;
     justify-content: center;
+    font-weight: 800px ;
 }
 .centro_inicio{
     display: flex;
+    margin-top: 20px;
+    text-align: center;
     justify-content: center; 
+    color:#D90429;
 }
 .informacion_nosotros{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
 }
 .informacion_texto{
     width: 50%;
@@ -73,13 +108,37 @@ h1,h2,h3,h4{
     justify-content: space-around;
     text-align: center;
 }
-.footer_redes{
+.imagenes img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+.textos{
+    padding: 10px;
+}
+.estilo{
     display: flex;
-    justify-content: end;
+}
+.titulos_top{
+    color: #FF0000;
+}
+.resenas{
+    display: flex;
+    padding-left: 25%;
+    padding-top: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 .redes{
     display: flex;
     justify-content: end;
     gap: 10px;
     text-align: center;
+    padding: 0px 5px;
+}
+.ampliar{
+    cursor: pointer;
 }

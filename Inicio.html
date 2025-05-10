@@ -5,81 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MangaVault</title>
     <link rel="stylesheet" href="Diseños/diseño.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Changa:wght@200..800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
 </head>
 <body class="color">
     <header>
-        <nav class="menu">
-            <img src="imagenes/LOGO.png" alt="Logo" height="70px">
-            <div class="menu">
-                <li><a href="Inicio.html">Inicio</a></li>
-                <li><a href="Mangas.html">Mangas</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Animes
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                    <a class="dropdown-item" href="Animes temp.html">Animes de temporada</a>
-                    <a class="dropdown-item" href="Animes.html">Animes ALL</a>
-                    </div>
+        <a class="navbar-brand" href="Inicio.html">
+            <img src="imagenes/Logos/LOGO.png" alt="Logo" height="70px">
+        </a>
+        <nav class="navbar navbar-expand ms-auto">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link text-white" href="Inicio.html">Inicio</a>
                 </li>
-                <li><a href="Juegos.html">VideoJuegos</a></li>
-            </div>
+                <li>
+                    <a class="nav-link text-white" href="Top.html?categoria=Manga">Mangas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Animes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Top.html?categoria=Animes">Animes</a></li>
+                        <li><a class="dropdown-item" href="Top.html?categoria=AnimeTemporada">Animes de Temporada</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link text-white" href="Top.html?categoria=VideoJuegos">Videojuegos</a> 
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class="centro_inicio">
-            <h2>DE QUE TRATA</h2>
-        </div>    
-        <div class="informacion_nosotros">
-            <p class="informacion_texto">MangaVault es una plataforma web que ofrece una gran variedad de mangas, animes y videojuegos. En esta sección, encontrarás la opción de descargar y leer mangas en formato PDF, así como ver tus videos favoritos en diferentes plataformas.</p>
-        </div>
-        <div class="informacion_nosotros">   
-            <h3>NOSOTROS</h3>
-        </div>
-        <div class="imagenes">
-            <figure>
-                <img src="imagenes/LOGO.png" alt="integrante1" width="100px">
-                <p>Lu</p>
-            </figure>
-            <figure>
-                <img src="imagenes/LOGO.png" alt="integrante2" width="100px">
-                <p>Latis</p>
-            </figure>
-            <figure>
-                <img src="imagenes/LOGO.png" alt="integrante3" width="100px">
-                <p>Wolk</p>
-            </figure>
-            <figure>
-                <img src="imagenes/LOGO.png" alt="integrante4" width="100px">
-                <p>Gonzai</p>
-            </figure>
-            <figure>
-                <img src="imagenes/LOGO.png" alt="integrante5" width="100px">
-                <p>Chona</p>
-            </figure>
-        </div>
+        <section>
+            <article class="centro_inicio">
+                <h1>DE QUE TRATA</h1>
+            </article>    
+            <article class="informacion_nosotros">
+                <p class="informacion_texto">MangaVault Reviews es una plataforma innovadora diseñada para los amantes del anime, manga y videojuegos. Su objetivo es ofrecer un espacio donde los usuarios puedan explorar reseñas detalladas.</p>
+            </article>
+        </section>
+       
+        <section>
+            <article class="centro_inicio">
+                <h2>NOSOTROS</h2>
+            </article>   
+            
+            <article class="informacion_nosotros">
+                <p class="informacion_texto">En MangaVault Reviews, somos un grupo de apasionados por el anime, manga y videojuegos, dedicados a crear una plataforma donde los fans puedan descubrir nueveas historias. Nuestro objetivo es construir una comunidad vibrante y colaborativa, donde cada voz cuente y cada reseña inspire nuevas aventuras.</p>
+            </article>
+            <article class="imagenes">
+                <figure>
+                    <img src="imagenes/Devs/Abate.png" alt="integrante1">
+                    <h3>Lautaro Abate</h3>
+                </figure>
+                <figure>
+                    <img src="imagenes/Devs/Gonza.jpg" alt="integrante2">
+                    <h3>Gonzalo Altamirano</h3>
+                </figure>
+                <figure>
+                    <img src="imagenes/Devs/Nacho.jpg" alt="integrante3">
+                    <h3>Ignacio Barroso</h3>
+                </figure>
+                <figure>
+                    <img src="imagenes/Devs/Dante.png" alt="integrante4">
+                    <h3>Dante Fermanelli</h3>
+                </figure>
+                <figure>
+                    <img src="imagenes/Devs/Lu.jpg" alt="integrante5">
+                    <h3>Lucia Gabian</h3>
+                </figure>
+            </article>
+         </section>
     </main>
-    <footer>
-        <a href="#">Contactanos</a>
-        <p>Todos los derechos del sitio reservados a MangaVault© </p>
-        <div class="footer_redes">
-            <p>Nuestras redes:</p>
+    <footer class="pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="text-center col-6">
+              <h4>Enlaces Rápidos</h4>
+              <ul class="list-unstyled">
+                <li class="pt-1"><a href="Inicio.html">Inicio</a></li>
+                <li class="pt-1"><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="text-center col-6">
+                <h4>Contáctanos</h4>
+                <div>
+                    <p>Redes: </p>
+                    <a href="https://instagram.com"><img src="imagenes/Redes/instagram.png" alt="instagram" width="40px"></a>
+                    <a href="https://x.com"><img src="imagenes/Redes/X-Logo.png" alt="X" width="40px"></a>
+                </div>
+            </div>
+          </div>
+          <div class="text-center py-3">
+            <p>&copy; 2024 MangaVault. Todos los derechos reservados.</p>
+          </div>
         </div>
-        <div class="redes">
-            <a href="https://instagram.com"><img src="imagenes/instagram.png" alt="instagram" width="40px"></a>
-            <a href="https://x.com"><img src="imagenes/X-Logo.png" alt="X" width="40px"></a>
-        </div>
-    </footer>
+        
+      </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
